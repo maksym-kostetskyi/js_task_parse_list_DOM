@@ -21,7 +21,7 @@ function sortList(list) {
 }
 
 function getEmployees(list) {
-  return Array.from(list);
+  return Array.from(list).map((a) => Object.assign({}, a.dataset));
 }
 
 sortList(lis);
